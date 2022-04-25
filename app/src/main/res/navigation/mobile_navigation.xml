@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_list">
+
+    <fragment
+        android:id="@+id/nav_list"
+        android:name="com.example.market.MachinesFragment"
+        android:label="Machines"
+        tools:layout="@layout/fragment_machines" />
+
+    <fragment
+        android:id="@+id/nav_bymark"
+        android:name="com.example.market.MachinesByMarkFragment"
+        android:label="Machines By Mark"
+        tools:layout="@layout/fragment_machines_by_mark" />
+
+    <fragment
+        android:id="@+id/nav_byear"
+        android:name="com.example.market.MachinesByYearFragment"
+        android:label="Machines By Year"
+        tools:layout="@layout/fragment_machines_by_year" />
+
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.market.LougoutFragment"
+        android:label="Logout"
+        tools:layout="@layout/fragment_lougout" />
+</navigation>
